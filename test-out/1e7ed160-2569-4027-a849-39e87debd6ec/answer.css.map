@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/component/answer/answer.scss"],
+  "sourcesContent": [".answer {\r\n  margin-bottom: 5px;\r\n  cursor: pointer;\r\n  width: 95%;\r\n}\r\n\r\n.answer-disabled {\r\n  margin-bottom: 5px;\r\n  width: 95%;\r\n  cursor: auto;\r\n}\r\n\r\n.answer-wrong {\r\n  margin-bottom: 5px;\r\n  width: 95%;\r\n  cursor: auto;\r\n  background-color: #ff2400;\r\n}\r\n\r\n.answer:hover {\r\n  background-color: blanchedalmond;\r\n}\r\n\r\n.answer-selected {\r\n  background-color: lightgreen;\r\n}\r\n\r\n.button-link {\r\n  background: none!important;\r\n  border: none;\r\n  padding: 0!important;\r\n  cursor: pointer;\r\n  text-align: left;\r\n  width: 100%;\r\n  font-weight: 400;\r\n}\r\n\r\n.button-link:active {\r\n  background-color: blanchedalmond;\r\n}\r\n"],
+  "mappings": ";AAAA,CAAA;AACE,iBAAA;AACA,UAAA;AACA,SAAA;;AAGF,CAAA;AACE,iBAAA;AACA,SAAA;AACA,UAAA;;AAGF,CAAA;AACE,iBAAA;AACA,SAAA;AACA,UAAA;AACA,oBAAA;;AAGF,CAnBA,MAmBA;AACE,oBAAA;;AAGF,CAAA;AACE,oBAAA;;AAGF,CAAA;AACE,cAAA;AACA,UAAA;AACA,WAAA;AACA,UAAA;AACA,cAAA;AACA,SAAA;AACA,eAAA;;AAGF,CAVA,WAUA;AACE,oBAAA;;",
+  "names": []
+}
