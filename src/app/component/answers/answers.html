@@ -1,0 +1,14 @@
+<div class='align-left'>
+    <ol class='ol-answers'>
+        @for (prompt of question().options; let index = $index; track `${question().number}-${prompt}`) {
+            <app-answer
+                [prompt]="prompt"
+                [answerNumber]="index + 1"
+                [answer]="answer()"
+                [correctAnswer]="question().answer"
+                [wasAnswered]="wasAnswered()"
+                (setAnswer)="updateAnswer($event)"
+            />
+        }
+    </ol>
+</div>

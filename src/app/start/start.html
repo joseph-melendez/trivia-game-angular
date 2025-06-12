@@ -1,0 +1,47 @@
+<p>
+    Welcome to Trivia Game! This application will deliver you random trivia questions to answer and keep track of your score. Please select the number of questions you wish to answer, from 1 to 20, and the desired difficulty.
+</p>
+
+<form
+    [formGroup]="startForm"
+    (ngSubmit)="handleSubmit()"
+>
+    <p>
+    <label for="numberOfQuestions">
+        Number of questions: 
+    </label>
+    <input
+        id="numberOfQuestions"
+        type="number"
+        formControlName="numberOfQuestions"
+        class="number-of-questions"
+        [min]="questionsMin"
+        [max]="questionsMax"
+    />
+    <br />
+    <label for="difficulty">
+        Difficulty: 
+    </label>
+    <select
+        id="difficulty"
+        formControlName="difficulty"
+        class="difficulty-dropdown"
+        [value]="this.startForm.value.difficulty"
+    >
+        <option [value]="difficultyEnum.any">Any</option>
+        <option [value]="difficultyEnum.easy">Easy</option>
+        <option [value]="difficultyEnum.medium">Medium</option>
+        <option [value]="difficultyEnum.hard">Hard</option>
+    </select>
+    </p>
+
+    <p>
+    <button
+        type="submit"
+        class="button-ok"
+        [disabled]="!startForm.valid"
+    >
+        Start
+    </button>
+    </p>
+</form>

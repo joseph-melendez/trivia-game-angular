@@ -1,0 +1,54 @@
+@if (!questions().length) {
+    <p>Loading...</p>
+} @else if (questionIndex() >= questions().length) {
+    <p>
+        You answered {{ correctAnswerCount() }} of {{ questions().length }} questions correctly.
+    </p>
+    <p>
+        <a
+            (click)="playAgain()"
+            (keypress)="playAgain()"
+            tabindex="0"
+        >
+            Play Again
+        </a>
+    </p>
+} @else {
+    <div>
+        <app-questionxofx [questionNumber]="question().number" [totalQuestions]="questions().length" />
+        <hr />
+        <app-categoryanddifficulty [category]="question().category" [difficulty]="question().difficulty" />
+        <br />
+        <app-question [question]="question().question" />
+        <app-answers
+            [question]="question()"
+            [answer]="answer()"
+            [wasAnswered]="wasAnswered()"
+            (setAnswer)="setAnswer($event)"
+        />
+        <p>
+    @if (wasAnswered()) {
+        @if (isCorrect()) {
+            <b>You are correct!</b><br /><br />
+        } @else {
+            That is incorrect.<br />
+            The correct answer is:&nbsp;
+            <b [innerHTML]="sanitizedAnswer()"></b>
+        }
+    } @else {
+        <br /><br />
+    }
+            </p>
+            <p>
+                <button
+                    class="button-ok"
+                    (click)="onClick()"
+                    keydown=""
+                    [disabled]="answer().length === 0"
+                    [tabIndex]="0"
+                >
+                    {{ buttonName() }}
+                </button>
+            </p>
+        </div>
+}

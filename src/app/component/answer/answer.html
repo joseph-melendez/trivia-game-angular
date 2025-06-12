@@ -1,0 +1,9 @@
+<li class={{answerFormatting()}}>
+    <button
+        class="button-link"
+        [innerHTML]="sanitizedPrompt"
+        (click)="answerClicked(prompt())"
+        (keypress)="answerClicked(prompt())"
+    >
+    </button>
+</li>

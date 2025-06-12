@@ -1,0 +1,8 @@
+<div class="flex-container">
+    <div class="category-difficulty-name question-font-size">
+        <b [innerHTML]="sanitizedCategory()"></b>
+    </div>
+    <div class="category-difficulty-pill">
+        <app-difficulty [difficulty]="difficulty()" />
+    </div>
+</div>

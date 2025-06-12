@@ -1,0 +1,40 @@
+.answer {
+  margin-bottom: 5px;
+  cursor: pointer;
+  width: 95%;
+}
+
+.answer-disabled {
+  margin-bottom: 5px;
+  width: 95%;
+  cursor: auto;
+}
+
+.answer-wrong {
+  margin-bottom: 5px;
+  width: 95%;
+  cursor: auto;
+  background-color: #ff2400;
+}
+
+.answer:hover {
+  background-color: blanchedalmond;
+}
+
+.answer-selected {
+  background-color: lightgreen;
+}
+
+.button-link {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  font-weight: 400;
+}
+
+.button-link:active {
+  background-color: blanchedalmond;
+}
