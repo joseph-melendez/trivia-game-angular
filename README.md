@@ -1,59 +1,25 @@
-# TriviaGameAngular
+# Trivia Game
+This app, simply named `Trivia Game`, is a basic frontend to the [https://opentdb.com/api_config.php](https://opentdb.com/api_config.php) API that returns trivia questions to the user.  This application was written in `Angular` and `Typescript` using `Yarn` and was meant as nothing more than a simple exercise.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.0.
+## Running Trivia Game
+This game can be accessed online here: [https://joseph-melendez.github.io/trivia-game-angular/](https://joseph-melendez.github.io/trivia-game-angular/)
 
-## Development server
+In order to download and run Trivia Game (note this was created with Node `v22.14.0` and Angular `20.0.1`):
 
-To start a local development server, run:
+1. Clone the repository to your computer: `git clone https://github.com/joseph-melendez/trivia-game-angular.git`
+2. Change directories to: `trivia-game-angular`
+3. Install the necessary node module with one of the following commands: `yarn` or `npm install`
+4. Run the game with one of the following commands: `yarn start` or `npm run start`
+5. Go to your browser and open the following url: [http://localhost:4200](http://localhost:4200)
 
-```bash
-ng serve
-```
+## Playing Trivia Game
+Playing Trivia Game is very easy:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+1. From the home page, select the number of questions you would like to answer, from 1 to 20, and the difficulty of the questions (Any, Easy, Medium, or Hard), and click `Start`.
+2. Answer by clicking on any of the answers, then selecting the `Answer` button.
+3. You will then be informed if you answered the question correctly, or, if incorrect, you will be informed of the correct answer.
+4. Click `Next Question` to go to the next question or, if that was the final question, to the final screen that will inform you of how many questions you got correct.
+5. Click `Play Again` to return to the home page.
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Deploying Trivia Game
+At the present time, there is no build pipeline setup.  In order to deploy the Trivia Game to GitHub Pages, please run the following command: `npm run deploy`
