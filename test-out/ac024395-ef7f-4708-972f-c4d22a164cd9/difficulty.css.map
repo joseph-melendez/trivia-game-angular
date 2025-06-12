@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/component/difficulty/difficulty.scss"],
-  "sourcesContent": [".background-color-green {\r\n  background-color: green;\r\n}\r\n\r\n.background-color-orange {\r\n  background-color: orange;\r\n}\r\n\r\n.background-color-red {\r\n  background-color: red;\r\n}\r\n\r\n.color-white {\r\n  color: white;\r\n}\r\n\r\n.pill {\r\n  border: none;\r\n  padding: 10px 20px;\r\n  text-align: center;\r\n  text-decoration: none;\r\n  display: inline-block;\r\n  min-width: 65px;\r\n  margin: 4px 2px;\r\n  border-radius: 16px;\r\n}"],
-  "mappings": ";AAAA,CAAA;AACE,oBAAA;;AAGF,CAAA;AACE,oBAAA;;AAGF,CAAA;AACE,oBAAA;;AAGF,CAAA;AACE,SAAA;;AAGF,CAAA;AACE,UAAA;AACA,WAAA,KAAA;AACA,cAAA;AACA,mBAAA;AACA,WAAA;AACA,aAAA;AACA,UAAA,IAAA;AACA,iBAAA;;",
-  "names": []
-}

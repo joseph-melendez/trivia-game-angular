@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/types/Difficulty.ts"],
-  "sourcesContent": ["export enum Difficulty {\r\n    any = 'any',\r\n    easy = 'easy',\r\n    medium = 'medium',\r\n    hard = 'hard'\r\n};"],
-  "mappings": ";;;;;AAAA,IAAY;AAAZ;;;AAAA,KAAA,SAAYA,aAAU;AAClB,MAAAA,YAAA,KAAA,IAAA;AACA,MAAAA,YAAA,MAAA,IAAA;AACA,MAAAA,YAAA,QAAA,IAAA;AACA,MAAAA,YAAA,MAAA,IAAA;IACJ,GALY,eAAA,aAAU,CAAA,EAAA;;;",
-  "names": ["Difficulty"]
-}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/services/question-service.spec.ts"],
-  "sourcesContent": ["import { TestBed } from '@angular/core/testing';\r\nimport { QuestionService } from './question-service';\r\nimport { HttpClient } from '@angular/common/http';\r\nimport { createSpyFromClass } from 'jasmine-auto-spies';\r\n\r\ndescribe('QuestionService', () => {\r\n  // https://danielk.tech/home/how-to-test-angular-http-services\r\n  let service: QuestionService;\r\n\r\n  beforeEach(() => {\r\n    TestBed.configureTestingModule({\r\n          providers: [\r\n            QuestionService,\r\n            { provide: HttpClient, useValue: createSpyFromClass(HttpClient) }\r\n          ]\r\n        });\r\n\r\n    service = TestBed.inject(QuestionService);\r\n  });\r\n\r\n  it('should be created', () => {\r\n    expect(service).toBeTruthy();\r\n  });\r\n});\r\n"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;;AAAA;AACA;AACA;AACA,gCAAmC;AAEnC,SAAS,mBAAmB,MAAK;AAE/B,MAAI;AAEJ,aAAW,MAAK;AACd,YAAQ,uBAAuB;MACzB,WAAW;QACT;QACA,EAAE,SAAS,YAAY,cAAU,8CAAmB,UAAU,EAAC;;KAElE;AAEL,cAAU,QAAQ,OAAO,eAAe;EAC1C,CAAC;AAED,KAAG,qBAAqB,MAAK;AAC3B,WAAO,OAAO,EAAE,WAAU;EAC5B,CAAC;AACH,CAAC;",
-  "names": []
-}

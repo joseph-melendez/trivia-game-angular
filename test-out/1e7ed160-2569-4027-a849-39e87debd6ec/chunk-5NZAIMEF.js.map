@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["angular:jit:template:src\\app\\component\\question\\question.html", "angular:jit:style:src\\app\\component\\question\\question.scss", "src/app/component/question/question.ts"],
-  "sourcesContent": ["<p class=\"question-align\" [innerHTML]=\"sanitizedQuestion()\"></p>", "/* src/app/component/question/question.scss */\n.question-align {\n  text-align: left;\n}\n/*# sourceMappingURL=question.css.map */\n", "import { Component, inject, input, OnChanges, signal } from '@angular/core';\r\nimport { DomSanitizer, SafeHtml } from '@angular/platform-browser';\r\n\r\n@Component({\r\n  selector: 'app-question',\r\n  imports: [],\r\n  templateUrl: './question.html',\r\n  styleUrl: './question.scss'\r\n})\r\nexport class Question implements OnChanges {\r\n  sanitizer = inject(DomSanitizer);\r\n  question = input.required<string>();\r\n  sanitizedQuestion = signal<SafeHtml>('');\r\n\r\n  ngOnChanges() {\r\n    this.sanitizedQuestion.set(this.sanitizer.bypassSecurityTrustHtml(this.question()));\r\n  }\r\n}\r\n"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;;ACAA,IAAAA;AAAA,IAAAC,iBAAA;AAAA;AAAA,IAAAD,oBAAA;AAAA;AAAA;;;ICSa;;;;;;;AATb;AACA;;AAQO,IAAM,WAAN,MAAME,UAAQ;MACnB,YAAY,OAAO,YAAY;iBACpB,MAAM,SAAQ;MACzB,oBAAoB,OAAiB,EAAE;MAEvC,cAAW;AACT,aAAK,kBAAkB,IAAI,KAAK,UAAU,wBAAwB,KAAK,SAAQ,CAAE,CAAC;MACpF;;;;;AAPW,eAAQ,WAAA;MANpB,UAAU;QACT,UAAU;QACV,SAAS,CAAA;QACT,UAAA;;OAED;OACY,QAAQ;;;",
-  "names": ["question_default", "init_question", "Question"]
-}

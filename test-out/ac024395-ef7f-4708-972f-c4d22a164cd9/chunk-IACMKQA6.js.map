@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/types/Constants.ts"],
-  "sourcesContent": ["export const QUESTIONS_MIN = 1;\r\nexport const QUESTIONS_MAX = 20;\r\n\r\nexport const TriviaApi = 'https://opentdb.com/api.php';"],
-  "mappings": ";;;;;AAAA,IAAa,eACA,eAEA;AAHb;;;AAAO,IAAM,gBAAgB;AACtB,IAAM,gBAAgB;AAEtB,IAAM,YAAY;;;",
-  "names": []
-}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["angular:jit:template:src\\app\\component\\questionxofx\\questionxofx.html", "angular:jit:style:src\\app\\component\\questionxofx\\questionxofx.scss", "src/app/component/questionxofx/questionxofx.ts"],
-  "sourcesContent": ["<div class=\"questionXofX\">\r\n    <b>Question {{questionNumber()}}/{{totalQuestions()}}</b>\r\n</div>", "/* src/app/component/questionxofx/questionxofx.scss */\n.questionXofX {\n  font-size: 28px;\n  margin: 10px;\n}\n/*# sourceMappingURL=questionxofx.css.map */\n", "import { Component, input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-questionxofx',\r\n  imports: [],\r\n  templateUrl: './questionxofx.html',\r\n  styleUrl: './questionxofx.scss'\r\n})\r\nexport class Questionxofx {\r\n  questionNumber = input<number>();\r\n  totalQuestions = input<number>();\r\n}\r\n"],
-  "mappings": ";;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;;ACAA,IAAAA;AAAA,IAAAC,qBAAA;AAAA;AAAA,IAAAD,wBAAA;AAAA;AAAA;;;ICQa;;;;;;;AARb;;AAQO,IAAM,eAAN,MAAME,cAAY;uBACN,MAAK;uBACL,MAAK;;;;;;AAFX,mBAAY,WAAA;MANxB,UAAU;QACT,UAAU;QACV,SAAS,CAAA;QACT,UAAA;;OAED;OACY,YAAY;;;",
-  "names": ["questionxofx_default", "init_questionxofx", "Questionxofx"]
-}
