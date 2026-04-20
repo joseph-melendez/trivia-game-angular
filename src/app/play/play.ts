@@ -68,8 +68,6 @@ export class Play implements OnInit {
   }
 
   onClick() {
-    console.log("joe joe joe joe joe", this.question().number, this.wasAnswered());
-
     if (this.wasAnswered()) {
       const nextQuestionNumber = this.questionIndex() + 1;
 
